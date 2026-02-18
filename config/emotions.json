@@ -1,0 +1,40 @@
+{
+  "emotions": {
+    "neutral": {
+      "length_scale": 1.0,
+      "noise_scale": 0.5,
+      "noise_w": 0.6,
+      "description": "Default neutral narration"
+    },
+    "suspense": {
+      "length_scale": 1.2,
+      "noise_scale": 0.667,
+      "noise_w": 0.8,
+      "description": "Slow, tense delivery for suspenseful moments"
+    },
+    "action": {
+      "length_scale": 0.8,
+      "noise_scale": 0.3,
+      "noise_w": 0.4,
+      "description": "Fast-paced, sharp delivery for action scenes"
+    },
+    "anger": {
+      "length_scale": 0.9,
+      "noise_scale": 0.4,
+      "noise_w": 0.5,
+      "description": "Intense, forceful delivery"
+    },
+    "fearful": {
+      "length_scale": 1.1,
+      "noise_scale": 0.7,
+      "noise_w": 0.75,
+      "description": "Shaky, uncertain delivery for fear"
+    }
+  },
+  "pauses": {
+    "short": 250,
+    "medium": 500,
+    "long": 1000,
+    "very_long": 2000
+  }
+}

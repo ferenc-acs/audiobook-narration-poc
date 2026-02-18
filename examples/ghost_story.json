@@ -1,0 +1,46 @@
+{
+  "title": "The Old Lighthouse",
+  "author": "Sample Story",
+  "segments": [
+    {
+      "text": "The lighthouse had been abandoned for fifty years.",
+      "emotion": "neutral",
+      "pause_after": "medium"
+    },
+    {
+      "text": "But on stormy nights, the light still shone.",
+      "emotion": "suspense",
+      "pause_after": "long"
+    },
+    {
+      "text": "They said no keeper had lived there since the accident.",
+      "emotion": "fearful",
+      "pause_after": "very_long"
+    },
+    {
+      "text": "Sarah didn't believe in ghosts.",
+      "emotion": "neutral",
+      "pause_after": "short"
+    },
+    {
+      "text": "Until she heard the footsteps on the spiral stairs.",
+      "emotion": "suspense",
+      "pause_after": "long"
+    },
+    {
+      "text": "Run!",
+      "emotion": "action",
+      "pause_after": "short"
+    },
+    {
+      "text": "She ran as fast as her legs could carry her, heart pounding in her chest.",
+      "emotion": "action",
+      "pause_after": "medium"
+    },
+    {
+      "text": "Behind her, the heavy iron door slammed shut with a deafening crash.",
+      "emotion": "suspense",
+      "pause_after": "very_long"
+    }
+  ]
+}
