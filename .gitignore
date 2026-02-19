@@ -49,3 +49,4 @@ models/
 .pytest_cache/
 .coverage
 htmlcov/
+local/
