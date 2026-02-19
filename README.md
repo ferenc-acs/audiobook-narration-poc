@@ -19,8 +19,8 @@ A lightweight proof-of-concept for emotional audiobook narration using Piper TTS
 git clone https://github.com/ferenc-acs/audiobook-narration-poc.git
 cd audiobook-narration-poc
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (creates/updates .venv)
+uv sync
 
 # Download a Piper voice model
 # Example: https://github.com/rhasspy/piper/releases
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ### Usage
 
 ```bash
-python narrator_cli.py examples/ghost_story.json \
+uv run audiobook-narrator examples/ghost_story.json \
     --model path/to/voice.onnx \
     --output story.mp3
 ```
@@ -96,7 +96,7 @@ Edit `config/emotions.json` to customize emotion parameters:
 Generate the sample ghost story:
 
 ```bash
-python narrator_cli.py examples/ghost_story.json \
+uv run audiobook-narrator examples/ghost_story.json \
     --model models/en_US-amy-medium.onnx \
     --output the_old_lighthouse.mp3
 ```
@@ -106,6 +106,19 @@ python narrator_cli.py examples/ghost_story.json \
 - Python 3.8+
 - Piper voice model (.onnx file)
 - ffmpeg (for normalization)
+
+## Development
+
+```bash
+# Run the CLI directly
+uv run python narrator_cli.py examples/ghost_story.json \
+    --model models/en_US-amy-medium.onnx \
+    --output the_old_lighthouse.mp3
+
+# Run tests (installs dev group)
+uv sync --group dev
+uv run pytest
+```
 
 ## License
 
